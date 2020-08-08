@@ -1,0 +1,59 @@
+{
+  "name": "css-scrollbar-side",
+  "version": "0.1.0",
+  "private": false,
+  "description": "CSS scrollbar side",
+  "keywords": [
+    "scroll",
+    "scrollbar",
+    "scrollbar-side"
+  ],
+  "homepage": "https://github.com/anrewvasilchuk/css-scrollbar-side#readme",
+  "bugs": {
+    "url": "https://github.com/anrewvasilchuk/css-scrollbar-side/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anrewvasilchuk/css-scrollbar-side.git"
+  },
+  "license": "MIT",
+  "author": "Andrew Vasilchuk <andrew.d.vasilchuk@gmail.com>",
+  "main": "src/index.css",
+  "style": "dist/index.css",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf ./dist/* && make-dir ./dist && postcss ./src/index.css > ./dist/index.css",
+    "fmt": "npm run fmt:prettier && npm run fmt:package.json",
+    "fmt:package.json": "npx sort-package-json",
+    "fmt:prettier": "prettier --write './**/*.{html,css,js}'",
+    "lint": "npm run lint:editorconfig && npm run lint:stylelint && npm run lint:prettier && npm run lint:package.json",
+    "lint:editorconfig": "editorconfig-checker -config ./editorconfig -exclude 'node_modules|dist|.DS_Store|.git'",
+    "lint:package.json": "sort-package-json --check",
+    "lint:prettier": "prettier --check './**/*.{html,css,js}'",
+    "lint:stylelint": "npx stylelint '**/*.css'",
+    "prepare": "npm run build"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^4.1.2",
+    "cssnano": "^4.1.10",
+    "editorconfig-checker": "^3.1.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "make-dir-cli": "^2.0.0",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "sort-package-json": "^1.44.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+# css-scrollbar-side
+
+> A fast and easy way to change scrollbar side
+
+## Features
+
+- `rtl` support
+
+## Usage
+
+```html
+<div class="scrollbar-side">
+  <div class="scrollbar-side__content">
+    $YOUR_AWESOME_CONTENT
+  </div>
+</div>
+```
+
+## Installation
+
+### Via NPM
+
+```bash
+$ npm install vue-lazy-youtube-video --save
+```
+
+### Via Yarn
+
+```bash
+$ yarn add vue-lazy-youtube-video
+```
+
+## Development
+
+1. Clone the repository
+2. Install dependencies using `yarn install` or `npm install` command
+3. Open `demo/index.html`
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)

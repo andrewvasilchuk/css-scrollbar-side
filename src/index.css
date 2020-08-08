@@ -1,0 +1,16 @@
+.scrollbar-side {
+  overflow: auto;
+  direction: rtl;
+}
+
+.scrollbar-side__content {
+  direction: ltr;
+}
+
+[dir="rtl"] .scrollbar-side {
+  direction: ltr;
+}
+
+[dir="rtl"] .scrollbar-side__content {
+  direction: rtl;
+}

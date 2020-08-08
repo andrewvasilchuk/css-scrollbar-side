@@ -21,13 +21,13 @@
 ### Via NPM
 
 ```bash
-$ npm install vue-lazy-youtube-video --save
+$ npm install css-scrollbar-side --save
 ```
 
 ### Via Yarn
 
 ```bash
-$ yarn add vue-lazy-youtube-video
+$ yarn add css-scrollbar-side
 ```
 
 ## Development

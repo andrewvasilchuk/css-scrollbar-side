@@ -30,6 +30,12 @@ $ npm install css-scrollbar-side --save
 $ yarn add css-scrollbar-side
 ```
 
+### Directly in browser
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/css-scrollbar-side/dist/index.css" />
+```
+
 ## Development
 
 1. Clone the repository

@@ -1,4 +1,4 @@
 {
   "*.{css,js,md}": ["prettier --check"],
-   "*.{css}": ["stylelint"]
+  "*.{css}": ["stylelint"]
 }
